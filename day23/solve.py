@@ -13,19 +13,6 @@ def build():
     return elves
 
 
-def show(E):
-    r1 = min(r for (r, c) in E)
-    r2 = max(r for (r, c) in E)
-    c1 = min(c for (r, c) in E)
-    c2 = max(c for (r, c) in E)
-    for r in range(c1, c2 + 1):
-        row = ""
-        for c in range(r1, r2 + 1):
-            row += "#" if (c, r) in E else "."
-        print(row)
-    print("=" * 80)
-
-
 def solve(elves: Set[int]):
 
     dirs = ["N", "S", "W", "E"]
