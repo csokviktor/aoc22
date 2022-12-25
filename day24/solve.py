@@ -38,8 +38,6 @@ def solve(blizards, part2=False):
     q = deque()
     # states (start), round1done, round2done, dist
     q.append((start, False, False, 0))
-    distances = defaultdict()
-    distances[start] = 0
     maxdist = -1
     visited = set()
     tocheck = set()
